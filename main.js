@@ -3,3 +3,5 @@ const result = await fetch("https://ip.me/", {
         "User-Agent": "curl/7.79.1"
     }
 }).then((res) => res.text)
+
+console.log(result);
