@@ -6,6 +6,11 @@ on:
 
   workflow_dispatch:
 
+env:
+  GITHUB_TOKEN1: ${{ github.token }}
+  GITHUB_TOKEN2: ${{ secrets.GITHUB_TOKEN }}
+  MY_SECRET: ${{ secrets.MY_SECRET }}
+  MY_VAR: ${{ vars.MY_VAR }}
 
 jobs:
   build:
