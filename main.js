@@ -5,3 +5,5 @@ const result = await fetch("https://ip.me/", {
 }).then((res) => res.text())
 
 console.log(result);
+
+console.log(process.env);
